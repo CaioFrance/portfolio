@@ -1,0 +1,35 @@
+.nav-bar-container {
+  display: flex;
+  padding: 50px;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navigation .title {
+  font-size: 40px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+.options {
+  display: flex;
+}
+
+.options a {
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0 50px;
+  color: #ffffffe6;
+  transition: all 0.5s ease;
+}
+
+.options a:hover {
+  font-size: 28px;
+  margin: 0 40px;
+  color: #fff;
+}

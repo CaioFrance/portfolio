@@ -1,5 +1,6 @@
-import '../assets/css/NavBar.css';
 import Button from './Button';
+
+import '../assets/css/NavBar.css';
 
 const NavBar = () => {
   return (
@@ -12,9 +13,8 @@ const NavBar = () => {
         </li>
         <li>
           <div className="options">
-            <Button href="#about">Sobre</Button>
-            <Button href="#tecnologias">Tecnologias</Button>
             <Button href="#projetos">Projetos</Button>
+            <Button href="#about">Sobre</Button>
           </div>
         </li>
       </ul>

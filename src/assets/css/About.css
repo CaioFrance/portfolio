@@ -1,5 +1,5 @@
 .about-container {
-  padding: 40px;
+  padding: 30px;
   background-color: var(--secondary-color);
   scroll-behavior: smooth;
   display: flex;
@@ -8,11 +8,50 @@
 
 .about-text {
   border: 1px solid #eee;
+  box-shadow: 0px 0px 2px black;
   padding: 20px 50px;
   font-size: 24px;
+  cursor: default;
   transition: all 0.5s ease;
+  text-shadow: 0 0 2px black;
 }
 
 .about-text:hover {
-  font-size: 30px;
+  font-size: 26px;
+}
+
+.technologies {
+  margin-top: 20px;
+}
+
+.greeting {
+  display: flex;
+  padding: 0 0 0 100px;
+}
+
+.text-greeting {
+  flex: 1;
+  font-size: 40px;
+  text-align: start;
+  white-space: nowrap;
+  font-weight: 300;
+}
+
+.description-greeting {
+  flex: 10;
+  text-align: justify;
+}
+
+.description-greeting p {
+  padding-top: 10px;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.wrap-greeting {
+  padding: 50px;
+}
+
+.techs-greeting {
+  margin-top: 10px;
 }

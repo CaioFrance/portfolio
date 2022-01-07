@@ -1,0 +1,21 @@
+.images {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20rem;
+}
+
+.images .images-text {
+  margin: 50px 0 30px 0;
+  text-align: center;
+}
+
+.image-group .stack {
+  flex: 1;
+  margin: 20px;
+}

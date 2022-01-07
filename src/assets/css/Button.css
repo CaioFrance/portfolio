@@ -2,14 +2,13 @@
   display: flex;
 }
 
-.link-container a {
+.link-container .link {
   color: #eee;
   text-decoration: none;
   transition: all 0.5s ease;
 }
 
-.link-container a:hover {
+.link-container .link:hover {
   font-size: 28px;
-  margin: 0 40px;
   color: #fff;
 }

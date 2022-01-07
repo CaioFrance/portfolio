@@ -1,5 +1,4 @@
 .buttons-container {
-  flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,8 +11,8 @@
 }
 
 .img-link:hover {
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
 }
 
 .buttons-container ul {

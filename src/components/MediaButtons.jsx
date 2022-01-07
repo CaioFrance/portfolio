@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 import Button from './Button';
 
-import '../assets/css/Buttons.css';
+import '../assets/css/MediaButtons.css';
 
 const Buttons = () => {
   return (

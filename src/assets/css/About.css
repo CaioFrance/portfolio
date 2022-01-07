@@ -1,0 +1,18 @@
+.about-container {
+  padding: 40px;
+  background-color: var(--secondary-color);
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+}
+
+.about-text {
+  border: 1px solid #eee;
+  padding: 20px 50px;
+  font-size: 24px;
+  transition: all 0.5s ease;
+}
+
+.about-text:hover {
+  font-size: 30px;
+}

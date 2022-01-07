@@ -1,0 +1,15 @@
+.link-container {
+  display: flex;
+}
+
+.link-container a {
+  color: #eee;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.link-container a:hover {
+  font-size: 28px;
+  margin: 0 40px;
+  color: #fff;
+}

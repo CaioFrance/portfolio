@@ -1,0 +1,24 @@
+.buttons-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-link {
+  height: 50px;
+  width: 50px;
+  transition: all 0.5s ease;
+}
+
+.img-link:hover {
+  height: 80px;
+  width: 80px;
+}
+
+.buttons-container ul {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  justify-content: space-around;
+}

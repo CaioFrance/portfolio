@@ -1,6 +1,24 @@
 .main-container {
+  display: flex;
+  height: calc(100% - 150px);
 }
 
 .text-detach {
   color: var(--secondary-color);
+}
+
+.main-description {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 0 100px;
+}
+
+.description {
+  flex: 1;
+  font-size: 50px;
+}
+
+.main-image,
+.main-description {
+  flex: 1;
 }

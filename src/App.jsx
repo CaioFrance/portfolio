@@ -1,13 +1,15 @@
 import NavBar from './components/NavBar';
+import Main from './components/Main';
+import About from './components/About';
 
 import './assets/css/App.css';
-import Main from './components/Main';
 
 const App = () => {
   return (
     <div className="container">
       <NavBar />
       <Main />
+      <About />
     </div>
   );
 };

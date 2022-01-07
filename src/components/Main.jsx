@@ -1,13 +1,20 @@
 import '../assets/css/Main.css';
+import MediaButtons from './MediaButtons';
+
+import Image from './Image';
 
 const Main = () => {
   return (
     <div className="main-container">
-      <p>Olá! Me chamo Caio.</p>
-      <p>
-        Um <span className="text-detach">Desenvolvedor</span> disposto à
-        resolver seus problemas.
-      </p>
+      <div className="main-description">
+        <p className="description">
+          Olá! Me chamo <span className="text-detach">Caio</span>.
+          <br />
+          Bem-vindo ao meu portfólio.
+        </p>
+        <MediaButtons />
+      </div>
+      <Image />
     </div>
   );
 };

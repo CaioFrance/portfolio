@@ -41,6 +41,7 @@ const About = () => {
           <Techs />
         </div>
       </div>
+      <div></div>
     </>
   );
 };

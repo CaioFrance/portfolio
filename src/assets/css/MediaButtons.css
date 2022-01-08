@@ -21,3 +21,32 @@
   list-style: none;
   justify-content: space-around;
 }
+
+@media (max-width: 576px) {
+  .buttons-container {
+    display: none;
+  }
+
+  .buttons-mobile {
+    flex: 1;
+    padding: 0 0 0 40px;
+  }
+
+  .buttons-mobile .img-link {
+    height: 2rem;
+    width: 2rem;
+    transition: all 0.5s ease;
+  }
+
+  .img-link:hover {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .buttons-mobile ul {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    justify-content: space-around;
+  }
+}

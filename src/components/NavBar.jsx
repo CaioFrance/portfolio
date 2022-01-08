@@ -1,24 +1,63 @@
-import Button from './Button';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { MdChromeReaderMode } from 'react-icons/md';
+import { ImUser } from 'react-icons/im';
 
 import '../assets/css/NavBar.css';
 
 const NavBar = () => {
   return (
-    <nav className="nav-bar-container">
-      <ul className="navigation">
-        <li>
-          <h1 className="title">
-            Ca<span style={{ color: 'var(--secondary-color)' }}>!</span>o
-          </h1>
-        </li>
-        <li>
-          <div className="options">
-            <Button href="#projetos">Projetos</Button>
-            <Button href="#about">Sobre</Button>
-          </div>
-        </li>
-      </ul>
-    </nav>
+    <>
+      <nav className="nav-bar-container">
+        <ul className="navigation">
+          <li>
+            <h1 className="title">
+              Ca<span style={{ color: 'var(--secondary-color)' }}>!</span>o
+            </h1>
+          </li>
+          <li>
+            <div className="options">
+              <a href="#projetos">Projetos</a>
+              <a href="#about">Sobre</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <nav className="nav-bar-mobile">
+        <ul className="navigation-mobile">
+          <li>
+            <h1 className="title">
+              Ca<span style={{ color: 'var(--secondary-color)' }}>!</span>o
+            </h1>
+          </li>
+          <li>
+            <div className="menu-mobile">
+              <AiOutlineMenu />
+              <div className="options-mobile">
+                <a href="#" className="menu">
+                  Menu
+                </a>
+                <a href="#projetos" className="group-button">
+                  <div className="button-description">
+                    <span className="icon">
+                      <MdChromeReaderMode size={23} />
+                    </span>
+                    <span>Projetos</span>
+                  </div>
+                </a>
+                <a href="#about" className="group-button">
+                  <div className="button-description">
+                    <span className="icon">
+                      <ImUser size={22} />
+                    </span>
+                    <span>Sobre</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 };
 

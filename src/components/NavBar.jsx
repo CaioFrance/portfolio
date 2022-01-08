@@ -33,7 +33,7 @@ const NavBar = () => {
             <div className="menu-mobile">
               <AiOutlineMenu />
               <div className="options-mobile">
-                <a href="#" className="menu">
+                <a href="/" className="menu">
                   Menu
                 </a>
                 <a href="#projetos" className="group-button">

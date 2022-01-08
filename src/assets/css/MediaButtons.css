@@ -22,7 +22,13 @@
   justify-content: space-around;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 781px) {
+  .buttons-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
   .buttons-container {
     display: none;
   }

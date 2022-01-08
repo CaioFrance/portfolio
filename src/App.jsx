@@ -11,9 +11,7 @@ const App = () => {
       <NavBar />
       <Main />
       <About />
-      <div style={{ display: 'none' }}>
-        <Projects />
-      </div>
+      <Projects />
     </div>
   );
 };

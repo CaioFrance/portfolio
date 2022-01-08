@@ -1,4 +1,11 @@
 .image {
-  max-width: 4vw;
+  max-width: 8vw;
   height: 100%;
+}
+
+@media (max-width: 780px) {
+  .image {
+    max-width: 15vw;
+    height: 100%;
+  }
 }

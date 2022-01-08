@@ -10,3 +10,13 @@
   font-size: 18px;
   text-transform: uppercase;
 }
+
+@media (max-width: 780px) {
+  .tech-container {
+    padding-top: 30px;
+  }
+
+  .tech-container span {
+    font-size: 22px;
+  }
+}

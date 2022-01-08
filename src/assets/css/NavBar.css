@@ -36,10 +36,18 @@
 
 .options a {
   font-size: 24px;
+  color: #eee;
+  text-decoration: none;
+  transition: all 0.5s ease;
   margin: 0 50px;
 }
 
-@media (max-width: 576px) {
+.options a:hover {
+  font-size: 28px;
+  color: #fff;
+}
+
+@media (max-width: 780px) {
   .nav-bar-container {
     display: none;
     padding: 50px;

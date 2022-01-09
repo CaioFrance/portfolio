@@ -1,0 +1,27 @@
+.footer-container {
+  padding: 10px 0;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  padding: 10px 20px;
+  cursor: default;
+  transition: all 0.5s ease;
+}
+
+.footer-address {
+  padding: 0 0 0 20px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.footer-text span {
+  font-size: 18px;
+}

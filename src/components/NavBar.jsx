@@ -1,5 +1,6 @@
 import { AiOutlineMenu } from 'react-icons/ai';
 import { MdChromeReaderMode } from 'react-icons/md';
+import { GrContact } from 'react-icons/gr';
 import { ImUser } from 'react-icons/im';
 
 import '../assets/css/NavBar.css';
@@ -16,8 +17,9 @@ const NavBar = () => {
           </li>
           <li>
             <div className="options">
-              <a href="#projetos">Projetos</a>
               <a href="#sobre">Sobre</a>
+              <a href="#projetos">Projetos</a>
+              <a href="#contato">Contato</a>
             </div>
           </li>
         </ul>
@@ -36,6 +38,14 @@ const NavBar = () => {
                 <a href="/" className="menu">
                   Menu
                 </a>
+                <a href="#about" className="group-button">
+                  <div className="button-description">
+                    <span className="icon">
+                      <ImUser size={22} />
+                    </span>
+                    <span>Sobre</span>
+                  </div>
+                </a>
                 <a href="#projetos" className="group-button">
                   <div className="button-description">
                     <span className="icon">
@@ -44,12 +54,12 @@ const NavBar = () => {
                     <span>Projetos</span>
                   </div>
                 </a>
-                <a href="#about" className="group-button">
+                <a href="#contato" className="group-button">
                   <div className="button-description">
                     <span className="icon">
-                      <ImUser size={22} />
+                      <GrContact size={23} />
                     </span>
-                    <span>Sobre</span>
+                    <span>Contato</span>
                   </div>
                 </a>
               </div>

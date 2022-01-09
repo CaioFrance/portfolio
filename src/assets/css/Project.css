@@ -20,8 +20,14 @@
 }
 
 @media (max-width: 780px) {
+  .project-container .image-container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+  }
+
   .project-container img {
-    width: 100% !important;
+    width: 90% !important;
   }
 
   /*Modal*/

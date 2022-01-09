@@ -1,7 +1,7 @@
-import axios from 'axios'
+import axios from 'axios';
 
 const mailer = axios.create({
-  baseURL: process.env.REACT_APP_API_MAILER
-})
+  baseURL: process.env.REACT_APP_API_MAILER,
+});
 
-export default mailer
+export default mailer;

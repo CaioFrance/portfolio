@@ -32,7 +32,6 @@ const Contact = () => {
 
   function showMessage() {
     toast.success('Mensagem enviada!', {
-      position: 'top-right',
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,

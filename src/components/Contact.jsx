@@ -4,6 +4,7 @@ import InputMask from 'react-input-mask';
 import mailer from '../services/mailer';
 
 import InfoBar from './InfoBar';
+import Loading from './Loading';
 
 import '../assets/css/Contact.css';
 
@@ -15,19 +16,14 @@ const Contact = () => {
     contact: '',
     description: '',
   });
+  const [showButton, setShowButton] = useState(true);
 
-  async function handleSendMailer(e) {
-    e.preventDefault();
+  function handleHideButton() {
+    setShowButton(false);
+  }
 
-    await mailer.post('/api/v1/mailer', release);
-    showMessage();
-    setRelease({
-      name: '',
-      email: '',
-      company: '',
-      contact: '',
-      description: '',
-    });
+  function handleShowButton() {
+    setShowButton(true);
   }
 
   function showMessage() {
@@ -38,6 +34,24 @@ const Contact = () => {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
+    });
+  }
+
+  async function handleSendMailer(e) {
+    e.preventDefault();
+
+    handleHideButton();
+    await mailer.post('/api/v1/mailer', release);
+
+    showMessage();
+
+    handleShowButton();
+    setRelease({
+      name: '',
+      email: '',
+      company: '',
+      contact: '',
+      description: '',
     });
   }
 
@@ -126,7 +140,9 @@ const Contact = () => {
               placeholder="Sinta-se a vontade..."
             />
           </div>
-          <input type="submit" className="submit" value="Enviar" />
+          <button id="submit" className="submit">
+            {showButton ? 'Enviar' : <Loading />}
+          </button>
         </form>
       </div>
     </div>

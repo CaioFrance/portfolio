@@ -102,8 +102,6 @@ const Contact = () => {
             <InputMask
               type="number"
               required={true}
-              type="text"
-              required={true}
               onChange={(e) =>
                 setRelease({ ...release, contact: e.target.value })
               }

@@ -15,7 +15,7 @@
   height: 50px;
 }
 
-.title {
+.navigation .title {
   font-family: 'Varela Round';
   font-size: 40px;
   margin-left: 50px;
@@ -23,18 +23,18 @@
   transition: all 0.5s ease;
 }
 
-.title:hover {
+.navigation .title:hover {
   font-size: 50px;
   cursor: default;
 }
 
-.options {
+.navigation .options {
   display: flex;
   height: 100%;
   align-items: center;
 }
 
-.options a {
+.navigation .options a {
   font-size: 24px;
   color: #eee;
   text-decoration: none;
@@ -42,7 +42,7 @@
   margin: 0 50px;
 }
 
-.options a:hover {
+.navigation .options a:hover {
   font-size: 28px;
   color: #fff;
 }
@@ -130,7 +130,7 @@
     font-weight: 600;
   }
 
-  .title {
+  .navigation .title {
     margin-left: 0px;
   }
 }

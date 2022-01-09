@@ -1,13 +1,12 @@
 import Techs from './Techs';
+import InfoBar from './InfoBar';
 
 import '../assets/css/About.css';
 
 const About = () => {
   return (
-    <>
-      <div className="about-container" id="about">
-        <div className="about-text">Sobre mim</div>
-      </div>
+    <div id="sobre">
+      <InfoBar label="Sobre mim" />
       <div className="technologies">
         <div className="greeting">
           <h2 className="text-greeting">
@@ -74,7 +73,7 @@ const About = () => {
           <Techs />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

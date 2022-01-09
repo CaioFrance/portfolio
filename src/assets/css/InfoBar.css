@@ -1,0 +1,21 @@
+.info-container {
+  padding: 10px 0;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid white;
+}
+
+.info-text {
+  padding: 10px 0px;
+  font-size: 38px;
+  cursor: default;
+  transition: all 0.5s ease;
+  text-shadow: 0 2px 5px black;
+}
+
+@media (max-width: 768px) {
+  .info-text {
+    font-size: 28px;
+  }
+}

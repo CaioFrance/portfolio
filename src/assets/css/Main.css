@@ -5,6 +5,7 @@
 
 .text-detach {
   color: var(--secondary-color);
+  font-size: 58px;
 }
 
 .main-description {
@@ -14,15 +15,15 @@
   padding: 0 0 0 100px;
 }
 
-.description {
-  font-size: 50px;
+.main-description .description {
+  font-size: 40px;
 }
 
-.description span {
+.main-description .description span {
   transition: all 0.5s ease;
 }
 
-.description span:hover {
+.main-description .description span:hover {
   font-size: 55px;
   cursor: default;
 }

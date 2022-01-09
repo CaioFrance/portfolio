@@ -14,6 +14,7 @@ const Contact = () => {
     email: '',
     company: '',
     contact: '',
+    subject: '',
     description: '',
   });
   const [showButton, setShowButton] = useState(true);
@@ -51,6 +52,7 @@ const Contact = () => {
       email: '',
       company: '',
       contact: '',
+      subject: '',
       description: '',
     });
   }
@@ -95,7 +97,7 @@ const Contact = () => {
               name="email"
               id="email"
               value={release.email}
-              placeholder="email@example.com"
+              placeholder="seu@email.com"
             />
           </div>
           <div className="input-company">
@@ -126,6 +128,19 @@ const Contact = () => {
               placeholder="(99) 99999-9999"
             />
           </div>
+          <div className="input-contact">
+            <label htmlFor="subject">Assunto: </label>
+            <input
+              type="text"
+              required={true}
+              onChange={(e) =>
+                setRelease({ ...release, subject: e.target.value })
+              }
+              name="subject"
+              id="subject"
+              value={release.subject}
+            />
+          </div>
           <div className="input-description">
             <label htmlFor="description">Descrição: </label>
             <textarea
@@ -137,7 +152,7 @@ const Contact = () => {
               name="description"
               id="description"
               value={release.description}
-              placeholder="Sinta-se a vontade..."
+              placeholder="Descreva sua necessidade.."
             />
           </div>
           <button id="submit" className="submit">

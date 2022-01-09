@@ -37,12 +37,13 @@
   text-decoration: none;
   border: 1px solid var(--secondary-color);
   background-color: #eee;
+  font-size: 22px;
+  padding: 0 5px;
+  font-family: 'Roboto';
 }
 
 .form-container > div > input:focus {
   border-radius: 5px;
-  margin: 0;
-  padding: 0;
   outline: none;
 }
 
@@ -56,6 +57,10 @@
   border-radius: 5px;
   background-color: #eee;
   border: 1px solid var(--secondary-color);
+  outline: none;
+  font-size: 22px;
+  padding: 0 5px;
+  font-family: 'Roboto';
 }
 
 .form-container .submit {
@@ -67,6 +72,17 @@
   color: var(--secondary-color);
   font-weight: 500;
   text-shadow: 0 0 1px var(--primary-color);
+  transition: all 0.1s ease;
+}
+
+.form-container .submit:hover {
+  font-size: 25px;
+  padding: 10px 20px 10px 20px;
+}
+
+.form-container .submit:active {
+  background-color: var(--secondary-color);
+  color: #eee;
 }
 
 .form-container {

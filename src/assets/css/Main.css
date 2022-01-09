@@ -24,7 +24,12 @@
 }
 
 .main-description .description span:hover {
-  font-size: 55px;
+  font-size: 45px;
+  cursor: default;
+}
+
+.main-description .description .text-detach:hover {
+  font-size: 68px;
   cursor: default;
 }
 

@@ -29,10 +29,11 @@ const Contact = () => {
 
   function showMessageSuccess() {
     toast.success('Formulário enviado!', {
+      position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
-      pauseOnHover: true,
+      pauseOnHover: false,
       draggable: true,
       progress: undefined,
     });
@@ -40,10 +41,11 @@ const Contact = () => {
 
   function showMessageError() {
     toast.error('Erro ao enviar o formulário!', {
+      position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
-      pauseOnHover: true,
+      pauseOnHover: false,
       draggable: true,
       progress: undefined,
     });
@@ -65,6 +67,7 @@ const Contact = () => {
         description: '',
       });
     } catch(e) {
+      console.log(e.message)
       showMessageError();
     }
     handleShowButton();

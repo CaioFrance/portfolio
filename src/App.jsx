@@ -13,7 +13,17 @@ import './assets/css/App.css';
 const App = () => {
   return (
     <div className="container">
-      <ToastContainer />
+      <ToastContainer 
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss={false}
+        draggable
+        pauseOnHover={false}
+      />
 
       <NavBar />
       <Main />

@@ -27,8 +27,19 @@ const Contact = () => {
     setShowButton(true);
   }
 
-  function showMessage() {
-    toast.success('Mensagem enviada!', {
+  function showMessageSuccess() {
+    toast.success('Formulário enviado!', {
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  }
+
+  function showMessageError() {
+    toast.error('Erro ao enviar o formulário!', {
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
@@ -42,19 +53,21 @@ const Contact = () => {
     e.preventDefault();
 
     handleHideButton();
-    await mailer.post('/api/v1/mailer', release);
-
-    showMessage();
-
+    try {
+      await mailer.post('/api/v1/mailer', release);
+      showMessageSuccess();
+      setRelease({
+        name: '',
+        email: '',
+        company: '',
+        contact: '',
+        subject: '',
+        description: '',
+      });
+    } catch(e) {
+      showMessageError();
+    }
     handleShowButton();
-    setRelease({
-      name: '',
-      email: '',
-      company: '',
-      contact: '',
-      subject: '',
-      description: '',
-    });
   }
 
   return (

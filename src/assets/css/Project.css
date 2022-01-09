@@ -20,6 +20,71 @@
   flex: 1;
 }
 
+/*MODAL*/
+.modal {
+  position: absolute;
+  inset: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  height: 50%;
+  width: 50%;
+  margin: 0 auto;
+  color: rgb(68, 68, 68);
+}
+
+.modal-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.modal-container .title {
+  font-size: 40px;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+}
+
+.modal-container .description {
+  display: flex;
+  height: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.modal-container .description .link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+}
+
+.modal-container .description .link a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  text-shadow: 0 0 1px black;
+  padding: 10px 0;
+}
+
+.modal-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-nav > button {
+  border: none;
+  background: transparent;
+  font-size: 30px;
+}
+
 @media (max-width: 780px) {
   .project-container .image-container {
     display: flex;
@@ -32,53 +97,8 @@
   }
 
   /*Modal*/
-  .modal-container {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-  }
-
-  .modal-container .title {
-    font-size: 40px;
-    text-transform: capitalize;
-    transition: all 0.5s ease;
-  }
-
-  .modal-container .description {
-    display: flex;
-    height: 100%;
-    font-size: 20px;
-    line-height: 30px;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: justify;
-  }
-
-  .modal-container .description .link {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    /* justify-content: space-between; */
-    align-items: flex-end;
-    padding: 0 0 20px 0;
-  }
-
-  .modal-container .description .link a {
-    text-decoration: none;
-    color: var(--secondary-color);
-    font-size: 1.4rem;
-    text-shadow: 0 0 1px black;
-    padding: 10px 0;
-  }
-
-  .modal-nav {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .modal-nav > button {
-    border: none;
-    background: transparent;
-    font-size: 30px;
+  .modal {
+    height: 80%;
+    width: 80%;
   }
 }

@@ -26,15 +26,9 @@ const Project = ({ image, alt, title, model, link, description, srcCode }) => {
         <Image alt={alt} title={title} image={image} />
       </div>
       <Modal
+        className='modal'
         isOpen={modalOpen}
         onRequestClose={closeModal}
-        style={{
-          content: {
-            height: '80%',
-            width: '80%',
-            color: '#444',
-          },
-        }}
         contentLabel="Example Modal"
       >
         <div className="modal-container">

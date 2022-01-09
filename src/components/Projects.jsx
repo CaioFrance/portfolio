@@ -94,8 +94,6 @@ const Projects = () => {
     }
   }
 
-  console.log(document.body.scrollHeight);
-
   return (
     <>
       <div id="projetos" className="projects-container">

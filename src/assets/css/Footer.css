@@ -17,6 +17,7 @@
 }
 
 .footer-address {
+  line-height: 25px;
   padding: 0 0 0 20px;
   font-size: 14px;
   font-style: italic;

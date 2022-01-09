@@ -100,7 +100,7 @@ const Contact = () => {
           <div className="input-contact">
             <label htmlFor="contact">Contato: </label>
             <InputMask
-              type="number"
+              type="text"
               required={true}
               onChange={(e) =>
                 setRelease({ ...release, contact: e.target.value })

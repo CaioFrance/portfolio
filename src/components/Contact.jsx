@@ -80,8 +80,9 @@ const Contact = () => {
         <div className="contact-description">
           <h2>Olá, aguardo seu contato!</h2>
           <p>
-            Você pode preencher o formulário e me enviar uma mensagem, ou pelo
-            WhatsApp, para conversarmos sobre o seu projeto e darmos um{' '}
+            Você pode preencher o formulário, me enviar uma mensagem por Email 
+            ou pelo WhatsApp, para conversarmos sobre o seu projeto e darmos 
+            um{' '}
             <span
               style={{ color: 'var(--secondary-color)', fontSize: '1.6rem' }}
             >

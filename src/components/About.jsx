@@ -28,9 +28,9 @@ const About = () => {
               </a>
               , sou Desenvolvedor Web e utilizo técnicas modernas de
               desenvolvimento, tais como Trabalho Colaborativo Remoto e
-              Validação Semanais. Posso projetar e desenvolver o seu site com
-              base nas suas necessidades e sugestões, e consultá-lo durante o
-              desenvolvimento.
+              Validação Semanal. Posso projetar, desenvolver o seu site com
+              base nas suas necessidades, sugestões e consultá-lo durante o
+              período de desenvolvimento.
             </p>
             <p>Abaixo estão as tecnologias que eu utilizo no meu dia-a-dia.</p>
           </div>

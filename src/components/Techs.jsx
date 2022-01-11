@@ -14,7 +14,7 @@ import docker from '../assets/images/docker.png';
 import mysql from '../assets/images/mysql.png';
 import postgres from '../assets/images/postgre.png';
 import figma from '../assets/images/figma.svg';
-import mongodb from '../assets/images/mongodb.svg';
+import mongodb from '../assets/images/mongodb.png';
 
 const Techs = () => {
   return (
@@ -31,24 +31,24 @@ const Techs = () => {
           <div className="stack">
             <Tech image={js} name="JavaScript" />
           </div>
-          <div className="stack">
-            <Tech image={node} name="NodeJS" />
-          </div>
         </div>
 
         <div className="image-group">
+          <div className="stack">
+            <Tech image={node} name="NodeJS" />
+          </div>
           <div className="stack">
             <Tech image={java} name="Java" />
           </div>
           <div className="stack">
             <Tech image={postgres} name="PostgreSQL" />
           </div>
-          <div className="stack">
-            <Tech image={mysql} name="Mysql" />
-          </div>
         </div>
 
         <div className="image-group">
+          <div className="stack">
+            <Tech image={mysql} name="Mysql" />
+          </div>
           <div className="stack">
             <Tech image={docker} name="Docker" />
           </div>

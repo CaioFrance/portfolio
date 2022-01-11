@@ -1,4 +1,5 @@
-import {ImLocation, ImWhatsapp} from 'react-icons/im'
+import {ImLocation, ImWhatsapp, e} from 'react-icons/im'
+import {MdOutlineMail} from 'react-icons/md'
 
 import '../assets/css/Footer.css';
 
@@ -13,10 +14,18 @@ const Footer = () => {
         <span style={{marginRight: '10px'}}>
           <ImWhatsapp />
         </span>
-        (92) 99255-6313
+        (92) 99255-6313 <br />
+        <span style={{marginRight: '10px'}}>
+          <MdOutlineMail />
+        </span>
+        caio.francelinosena@gmail.com
       </address>
       <p className="footer-text">
-        <span>Feito por Caio Francelino</span>
+        <span>Desenvolvido por{' '}
+          <a href='https://www.linkedin.com/in/caio-francelino-sena-santos/'>
+            Caio Francelino
+          </a>
+        </span>
       </p>
     </footer>
   );

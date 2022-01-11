@@ -13,7 +13,6 @@
 .footer-text {
   padding: 10px 20px;
   cursor: default;
-  transition: all 0.5s ease;
 }
 
 .footer-address {
@@ -25,4 +24,23 @@
 
 .footer-text span {
   font-size: 18px;
+}
+
+.footer-text span > a {
+  color: #fff;
+}
+
+@media (max-width: 780px) {
+  .footer-address {
+    flex: 2;
+  }
+
+  .footer-text {
+    flex: 1;
+  }
+
+  .footer-text {
+    padding: 10px 5px;
+    text-align: center;
+  }
 }

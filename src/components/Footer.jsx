@@ -1,4 +1,4 @@
-import {ImLocation, ImWhatsapp, e} from 'react-icons/im'
+import {ImLocation, ImWhatsapp} from 'react-icons/im'
 import {MdOutlineMail} from 'react-icons/md'
 
 import '../assets/css/Footer.css';

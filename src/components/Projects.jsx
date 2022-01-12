@@ -7,7 +7,7 @@ import '../assets/css/Projects.css';
 
 import dashboard from '../assets/images/projects/dashboard.png';
 import pokedex from '../assets/images/projects/pokedex.png';
-import todoApp from '../assets/images/projects/todo-app-ruby.png';
+// import todoApp from '../assets/images/projects/todo-app-ruby.png';
 import fas from '../assets/images/projects/fas.png';
 
 const projects = [
@@ -33,16 +33,16 @@ const projects = [
     link="https://poke-vue.netlify.app"
     srcCode="https://github.com/CaioFrance/poke-vue"
   />,
-  <Project
-    image={todoApp}
-    model="pessoal"
-    title="ToDo App"
-    description={`ToDo Application foi construído com Ruby on Rails.
-    Essa aplicação teve como objetivo entender como é rápido e prático construir
-    uma aplicação com o framework Rails.`}
-    link="https://todo-app-ruby-caio.herokuapp.com/"
-    srcCode="https://github.com/CaioFrance/todo-app"
-  />,
+  // <Project
+  //   image={todoApp}
+  //   model="pessoal"
+  //   title="ToDo App"
+  //   description={`ToDo Application foi construído com Ruby on Rails.
+  //   Essa aplicação teve como objetivo entender como é rápido e prático construir
+  //   uma aplicação com o framework Rails.`}
+  //   link="https://todo-app-ruby-caio.herokuapp.com/"
+  //   srcCode="https://github.com/CaioFrance/todo-app"
+  // />,
   <Project
     image={fas}
     model="trabalho"

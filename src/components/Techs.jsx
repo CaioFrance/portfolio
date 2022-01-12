@@ -14,7 +14,7 @@ import docker from '../assets/images/docker.png';
 import mysql from '../assets/images/mysql.png';
 import postgres from '../assets/images/postgre.png';
 import figma from '../assets/images/figma.svg';
-import spring from '../assets/images/spring.png';
+import mongodb from '../assets/images/mongodb.png';
 
 const Techs = () => {
   return (
@@ -66,7 +66,7 @@ const Techs = () => {
             <Tech image={figma} name="Figma" />
           </div>
           <div className="stack">
-            <Tech image={spring} name="Spring Framework" />
+            <Tech image={mongodb} name="Mongodb" />
           </div>
         </div>
 
@@ -119,7 +119,7 @@ const Techs = () => {
             <Tech image={figma} name="Figma" />
           </div>
           <div className="stack-mobile">
-            <Tech image={spring} name="Spring Framework" />
+            <Tech image={mongodb} name="MongoDB" />
           </div>
         </div>
 
